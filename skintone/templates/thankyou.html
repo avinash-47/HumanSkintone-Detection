@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Thank You{% endblock title %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'CSS/result.css' %}">
+{% endblock css %}
+{% block body %}
+<header class="page-header gradient">
+  <div class="container pt-3">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-md-6">
+        <center><h1>Thank You!</h1></center>
+
+        <p>
+          Thank you for taking the time . Your form has been submitted successfully . We
+          will get in touch with you as soon as possible.
+          <br>
+          <center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4QJRDaBcVqs0oC1FiJwp026F45H4Mz9Ubrg&usqp=CAU" alt=""></center><br>
+        </p>
+      </div>
+    </div>
+  </div>
+</header>
+{% endblock body %}

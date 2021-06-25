@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact{% endblock title %}
+
+{% block css %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'CSS/contact.css' %}">
+{% endblock css %}
+{% block body %}
+
+<section class="contact">
+    <div class="conent">
+
+        <div class="contactform">
+            <form method="POST" enctype="multipart/form-data" action="{% url 'contact' %}">
+                {% csrf_token %}
+                <h2>Send message</h2>
+                <div class="inputbox">
+                    <center><input type="text" name="name" id="name" placeholder="Enter Your Name" required></center>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <center><input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+                    </center>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <center><input type="text" name="phoneNumber" id="phoneNumber" placeholder="Enter Your Phone Number"
+                            required></center>
+                </div>
+                <br>
+                <center>
+                    <div class="inputBox">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </center>
+            </form>
+        </div>
+    </div>
+</section>
+
+{% endblock body %}

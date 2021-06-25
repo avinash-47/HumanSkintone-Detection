@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body
+{
+    background-image: linear-gradient(rgba(12,32,59,0.55),rgba(12,32,59,0.74)),url("https://i1.wp.com/www.ajwestfallco.com/wp-content/uploads/2018/11/Contact-Us-AdobeStock_216476933.jpeg?resize=5314%2C2041&ssl=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contact
+{
+    position: relative;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    padding-left: 30%;
+    margin-top: 9%;
+    
+}
+.contactform
+{
+    width: 600px;
+    height: 340px;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+    background: rgb(151, 230, 250);
+}
+
+.contactform .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+input
+{
+    width: 250px;
+    padding: 12px;
+    font-size: 14px;
+    border: none;
+    appearance: none;
+    outline: none;
+    background: #f2f2f2;
+    border-radius: 3px;
+}
+
+input:focus::placeholder
+{
+    color: transparent;
+}
+
+.contactform h2{
+    font-family: 'Dancing Script', cursive;
+    color: rgb(3, 5, 92);
+    text-align: center;
+}
+
+::placeholder
+{
+    color:rgb(25, 0, 255);
+}
